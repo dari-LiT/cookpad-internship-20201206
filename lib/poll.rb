@@ -1,12 +1,9 @@
 class Poll
-  def initialize(title, candidates)
-  end
+  attr_reader :title, :candidates, :date
 
-  def title
-    'Awesome Poll'
-  end
-
-  def candidates
-    ['Alice', 'Bob']
+  def initialize(title, candidates, date = nil)
+    @title = title
+    @candidates = candidates
+    @date = date
   end
 end
